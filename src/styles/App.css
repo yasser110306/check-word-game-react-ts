@@ -51,7 +51,7 @@
 }
 
 .inputs input {
-    @apply w-10 h-10 border-black outline-none text-center text-3xl caret-btn;
+    @apply w-10 h-10 border-black outline-none text-center text-3xl caret-btn uppercase;
     border-bottom: 2px solid;
 }
 
@@ -61,4 +61,14 @@
 
 .play-zone > button {
     @apply text-white text-lg text-center w-full p-2 bg-btn rounded-lg;
+}
+
+.in-place {
+    @apply bg-inPlace opacity-75;
+}
+.not-in-place {
+    @apply bg-notInPlace opacity-75;
+}
+.wrong {
+    @apply bg-primary opacity-75;
 }

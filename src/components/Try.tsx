@@ -1,7 +1,7 @@
-function Try({ tryNum }: { tryNum: number }): JSX.Element {
+function Try({ trynum }: { trynum: string }): JSX.Element {
     return (
-        <div className="try" data-tryNum={tryNum}>
-            <p>try{tryNum}</p>
+        <div className="try" data-trynum={trynum}>
+            <p>try{trynum}</p>
             <div className="inputs">
                 <input type="text" />
                 <input type="text" />
