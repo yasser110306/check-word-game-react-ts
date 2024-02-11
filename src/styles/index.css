@@ -4,4 +4,14 @@
 
 * {
     font-family: "Space Mono", monospace;
+    text-transform: capitalize;
+    box-sizing: border-box;
+}
+
+html {
+    @apply h-full;
+}
+
+body {
+    @apply bg-primary flex justify-center items-center h-full;
 }

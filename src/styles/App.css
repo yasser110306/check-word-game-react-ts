@@ -2,7 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
+.wrapper {
+    @apply bg-secondry;
+}
 
-.test {
-    @apply text-xl;
+.wrapper > p {
+    @apply p-2 text-center bg-white text-lg font-semibold;
+}
+
+.game-container {
+    @apply flex gap-5 p-5;
+}
+
+.guide-container {
+    @apply flex flex-col gap-4;
+}
+
+.guide-container > p {
+    @apply font-semibold text-center text-base;
+}
+
+.color-hint {
+    @apply flex flex-col gap-2;
+}
+
+.guide-hint-container {
+    @apply flex items-center gap-3 p-2 rounded bg-white;
+}
+
+.guide-hint-container > span {
+    @apply w-7 h-7 rounded;
+}
+
+.guide-hint-container > p {
+    @apply font-semibold text-sm;
+}
+
+.tries {
+    @apply flex flex-col gap-3;
+}
+
+.try {
+    @apply flex items-center gap-2;
+}
+
+.inputs {
+    @apply grid gap-2 grid-cols-5 grid-rows-1;
+}
+
+.inputs input {
+    @apply w-10 h-10 border-black outline-none text-center text-3xl caret-btn;
+    border-bottom: 2px solid;
+}
+
+.play-zone {
+    @apply flex flex-col gap-5;
+}
+
+.play-zone > button {
+    @apply text-white text-lg text-center w-full p-2 bg-btn rounded-lg;
 }
