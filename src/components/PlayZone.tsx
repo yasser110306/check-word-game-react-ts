@@ -15,10 +15,15 @@ function PlayZone(): JSX.Element {
     // updates the state only when the check btn is clicked.
     useEffect(() => {
         // updating exictance of the active input.
-        const inputs = document.querySelectorAll(`.try[data-trynum="${tryNumber.toString()}"] input `);
+        const inputs = document.querySelectorAll(
+            `.try[data-trynum="${tryNumber.toString()}"] input `
+        ) as NodeListOf<HTMLInputElement>;
 
         //updating the inputs in the state.
         setAnswerFields(Array.from(inputs));
+
+        // focusing in the first input every try
+        inputs[0].focus();
 
         // adding active class so it can be easily accessed.
         inputs.forEach((input) => {
@@ -28,6 +33,7 @@ function PlayZone(): JSX.Element {
 
         // updating exictance of the unactive input.
         const notActiveInputs = document.querySelectorAll("input:not(.active)");
+        
         // updating the unactive inputs attributes.
         notActiveInputs?.forEach((input) => {
             input.setAttribute("maxlength", "1");
