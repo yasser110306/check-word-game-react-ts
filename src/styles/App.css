@@ -64,11 +64,40 @@
 }
 
 .in-place {
-    @apply bg-inPlace opacity-75;
+    @apply bg-inPlace opacity-75 border-0;
 }
 .not-in-place {
-    @apply bg-notInPlace opacity-75;
+    @apply bg-notInPlace opacity-75 border-0;
 }
 .wrong {
-    @apply bg-primary opacity-75;
+    @apply bg-primary opacity-75 border-0;
+}
+
+.state-alert {
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    border-radius: 4px;
+    left: 0;
+    font-size: 1.4rem;
+    text-align: center;
+    top: calc(50% - 23px);
+    padding: 20px;
+    box-shadow: 0 0 10px 5px #00000035;
+    animation: stretch 0.3s ease-in-out;
+}
+
+@keyframes stretch {
+    0% {
+        width: 20%;
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    100% {
+        width: 100%;
+    }
 }

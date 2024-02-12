@@ -13,5 +13,5 @@ html {
 }
 
 body {
-    @apply bg-primary flex justify-center items-center h-full;
+    @apply bg-primary flex justify-center items-center h-full relative;
 }
