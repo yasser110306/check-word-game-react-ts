@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 const answer = getRandomAnswer();
 
 function PlayZone(): JSX.Element {
-    // state if the user won or lost
+    // state if the user won or lost.
     const [gameResult, setGameResult] = useState<boolean>(false);
 
     // state the number of the current try for the selector.
